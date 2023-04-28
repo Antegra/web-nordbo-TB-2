@@ -9,6 +9,8 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
+    "firebase": "^9.21.0",
     "help": "^3.0.2",
     "pinia": "^2.0.32",
     "sass": "^1.62.1",

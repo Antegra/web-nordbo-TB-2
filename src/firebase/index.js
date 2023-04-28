@@ -1,9 +1,3 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-
-import App from './App.vue'
-import router from './router'
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -19,13 +13,5 @@ const firebaseConfig = {
   appId: "1:514374256871:web:aeb833ef8859bb30c5ba42"
 };
 
-initializeApp(firebaseConfig);
-
-import './assets/main.scss'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);

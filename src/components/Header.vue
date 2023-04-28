@@ -1,183 +1,97 @@
-<script setup>
 
-</script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav class="nav" id="nav">
-        <div class="nav-left">
-          <a to="/">
-            <img class="logo" src="../assets/img/nordbo-logo.webp" alt="Nordbo Robotics logo" />
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a style="width:312px; height:128px;" class="navbar-item" href="https://bulma.io">
+      <img style="width:312px; max-height:128rem; height:128px;" src="src\assets\img\nordbo-logo.webp">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <RouterLink to="/" class="navbar-item">
+        Sale
+      </RouterLink>
+
+      <RouterLink to="/products" class="navbar-item">
+        Products
+      </RouterLink>
+      <RouterLink to="/clients" class="navbar-item">
+        Clients
+      </RouterLink>
+      
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link navbar-item navbar-icon">
+              <img src="src\assets\img\settings.png">
+            </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Settings
+          </a>
+          <a class="navbar-item">
+            Increased contrast
+          </a>
+          <a class="navbar-item">
+            Color blindness
+          </a>
+          <a class="navbar-item">
+            Larger text
+          </a>
+          <a class="navbar-item">
+            Dark theme
+          </a>
+          <a class="navbar-item">
+            Screen reader
           </a>
         </div>
-        <div class="nav-middle">
-          <a class="navigation-link" to="/">Sale</a>
-          <a class="navigation-link" to="/Products">Ny sag</a>
-          <a class="navigation-link" to="/Clients">Clients</a>
-        </div>
-        <div class="nav-right">
-          <a class="navigation-link" to="/settings">settings</a>
-          <a class="navigation-link logout" @click="logOut()">Log out</a>
-        </div>
+      </div>
           
-        
-      </nav>
+          <RouterLink to="/login"  class="navbar-item navbar-icon">
+            <img src="src\assets\img\logout.png">
+          </RouterLink>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
+</nav>
 </template>
 
-<style lang="scss" scoped>
+<style>
+@import "node_modules\bulma\css\bulma.min.css";
 
-@import "../assets/scss/colors.scss";
-@import "../assets/scss/typography.scss";
+.navbar-start {
+  justify-items: center;
+  margin: auto;
+  font-size: large;
 
-@import "../assets/scss/variabler.scss";
-@import "../assets/scss/button.scss";
-@import "../assets/scss/mixins.scss";
-@import "../assets/scss/layout.scss";
+  
+}
 
-header {
-  display: flex;
-  flex: row;
-  justify-content: center;
+.navbar-start a {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
-  .wrapper {
-    width: 100%;
+.navbar-end {
+  max-width:100px;
+}
 
-    nav {
-      display: flex;
-      align-items: baseline;
-
-      .nav-left {
-        line-height: 1.5;
-    max-height: 100vh;
-        justify-content: left;
-      }
-
-      .nav-middle {
-        justify-content: center;
-      }
-
-      .nav-right {
-        display: flex;
-        align-items: right;
-        justify-content: right;
-      }
-      
-
-      .navigation-link {
-        color: #000;
-        text-decoration: none;
-        font-weight: 600;
-        color: $Madison;
-        padding: 1rem 0;
-        cursor: pointer;
-
-        .material-symbols-outlined {
-          position: relative;
-          top: 5px;
-          font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 100
-        }
-      }
-
-      .logo {
-        max-width: 220px;
-      }
-
-      .main-navigation {
-        .navigation-middle {
-          color: $Madison;
-          margin: 0 20px;
-          text-decoration: none;
-          font-weight: bold;
-
-          .material-symbols-outlined {
-            position: relative;
-            top: 5px;
-            font-variation-settings:
-              'FILL' 0,
-              'wght' 400,
-              'GRAD' 0,
-              'opsz' 100
-          }
-        }
-
-        .navigation-right {
-          color: $Midnight-Green;
-          margin-left: 20px;
-          text-decoration: none;
-
-          .material-symbols-outlined {
-            position: relative;
-            top: 5px;
-            font-variation-settings:
-              'FILL' 0,
-              'wght' 400,
-              'GRAD' 0,
-              'opsz' 100
-          }
-        }
-
-        .toggleicon {
-          display: none;
-        }
-      }
-    }
-
-    //Mobileview
-    @media screen and (max-width: 620px) {
-      nav {
-        padding: 2rem;
-        justify-content: space-between;
-
-        .main-navigation {
-          .navigation-link {
-            display: none;
-          }
-
-          .toggleicon {
-            display: inline;
-          }
-        }
-
-        .main-navigation-responsive {
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 100vh;
-          width: 50vw;
-          background-color: $Madison;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-
-          .toggleicon {
-            position: absolute;
-            right: 2rem;
-            top: 2rem;
-            color: white;
-          }
-
-          .navigation-link {
-            padding: 1rem 0;
-            color: white !important;
-
-            text-decoration: none;
-          }
-
-          .navigation-right {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-  }
+.navbar-icon img {
+  width:50px; 
+  max-height:50rem;
 }
 
 </style>
