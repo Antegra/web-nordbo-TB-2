@@ -3,28 +3,24 @@
 </script>
 
 <template>
+    <h1>Do you already have robots?</h1>
     <div class="client section">
-        <h1>Create Client</h1>
         <div class="client-form">
         <form>
             <span>
                 <div class="client">
-                        <label for="existing" class="label3">Existing Client</label>
+                        <label for="existing" class="label3">Yes</label>
                         <input type="checkbox" id="existing" class="input-check">
                 </div>
             </span>
+
             <span>
-                <div class="client-text">
-                         <label for="company-name" class="label1">Company name</label>
-                        <input type="text" id="company-name" class="input">
+                <div class="client">
+                        <label for="existing" class="label3">No</label>
+                        <input type="checkbox" id="existing" class="input-check">
                 </div>
             </span>
-            <span>
-                <div class="client-mail">
-                        <label for="company-email" class="label2">E-mail</label>
-                        <input type="text" id="company-email" class="input">
-                </div>
-            </span>
+
         </form>
         </div>
     </div>

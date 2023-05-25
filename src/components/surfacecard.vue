@@ -3,51 +3,27 @@
 </script>
 
 <template>
-    <div class="section-title">
-        <h3>Which processes do you want to automate?</h3>
-    </div>
-
+    <h1>Which surfaces do you work with?</h1>
 
     <div class="card-grid">
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Sanding.png">
+            <img class="card-img" src="../assets/img/Flat.png">
             <div class="text-box">
-                <h3 class="card-title">Sanding</h3>
+                <h3 class="card-title">Flat</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Grinding.png">
+            <img class="card-img" src="../assets/img/Curved.png">
             <div class="text-box">
-                <h3 class="card-title">Grinding</h3>
+                <h3 class="card-title">Curved</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Finishing.png">
+            <img class="card-img" src="../assets/img/Complex.png">
             <div class="text-box">
-                <h3 class="card-title">Finishing</h3>
-            </div>
-        </div>
-
-        <div class="p-card">
-            <img class="card-img" src="../assets/img/Deburring.png">
-            <div class="text-box">
-                <h3 class="card-title">Deburring</h3>
-            </div>
-        </div>
-
-        <div class="p-card">
-            <img class="card-img" src="../assets/img/Painting.png">
-            <div class="text-box">
-                <h3 class="card-title">Painting/dipensing</h3>
-            </div>
-        </div>
-
-        <div class="p-card">
-            <img class="card-img" src="../assets/img/Quality.png">
-            <div class="text-box">
-                <h3 class="card-title">Quality Control</h3>
+                <h3 class="card-title">Complex curvature</h3>
             </div>
         </div>
     </div>
@@ -101,5 +77,9 @@
     .section-title{
         color: $Madison;
     }
+
+    h1{
+    color: $Madison;
+}
 
 </style>
