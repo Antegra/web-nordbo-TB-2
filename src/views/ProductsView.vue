@@ -57,16 +57,7 @@ onMounted(async () => {
   
     <h1>Products</h1>
 
-    <div class="container allProducts">
-        <cards
-        v-for="product in products"
-        :key="product.id"
-        :productName="product.productName"
-        >
-
-        </cards>
-
-    </div>
+    
  
 </template>
 

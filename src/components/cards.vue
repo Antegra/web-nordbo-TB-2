@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['productName'])
+
 </script>
 
 <template>
@@ -51,13 +51,13 @@ defineProps(['productName'])
                 <h3 class="card-title">Quality Control</h3>
             </div>
         </div>
+    </div>    
 =======
     
-    <div class="p-card">
-        <img class="card-img" src="../assets/img/Sanding.png">
-        <h3 class="card-title">{{ productName }}</h3>
+     
+    
 >>>>>>> Stashed changes
-    </div>
+    
 
 
 
