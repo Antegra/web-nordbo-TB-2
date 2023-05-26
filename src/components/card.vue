@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
          <div class="section-title">
         <h3>Which processes do you want to automate?</h3>
@@ -17,35 +13,35 @@
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Grinding.png">
+            <img class="card-img" src="../assets/img/Grinding.webp">
             <div class="text-box">
                 <h3 class="card-title">Grinding</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Finishing.png">
+            <img class="card-img" src="../assets/img/Finishing.webp">
             <div class="text-box">
                 <h3 class="card-title">Finishing</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Deburring.png">
+            <img class="card-img" src="../assets/img/Deburring.webp">
             <div class="text-box">
                 <h3 class="card-title">Deburring</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Painting.png">
+            <img class="card-img" src="../assets/img/Painting.webp">
             <div class="text-box">
                 <h3 class="card-title">Painting/dipensing</h3>
             </div>
         </div>
 
         <div class="p-card">
-            <img class="card-img" src="../assets/img/Quality.png">
+            <img class="card-img" src="../assets/img/Quality.webp">
             <div class="text-box">
                 <h3 class="card-title">Quality Control</h3>
             </div>
