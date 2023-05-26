@@ -61,7 +61,7 @@ onMounted(async () => {
 </template>
 
 <style lang="scss" scoped>
-@import "..\..\node_modules\bulma\css\bulma.min.css";
+@import "../../node_modules/bulma/css/bulma.min.css";
 @import "../assets/scss/colors.scss";
 @import "../assets/scss/typography.scss";
 
