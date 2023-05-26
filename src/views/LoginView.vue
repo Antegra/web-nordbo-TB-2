@@ -24,23 +24,33 @@ const register = () => {
 <template>
   
   <h1>Login</h1>
-    <div class="login-input">
-    <h3>Username   <input class="input is-rounded" type="email" placeholder="Write your E-mail" v-model="email"></h3>
-    <br>
-    <h3>password<input class="input is-rounded" type="password" placeholder="Write your password" v-model="password"> </h3>
-    <button @click="register">login</button>    
+    <div class="login-box">
+        <img style="width:312px; " src="src\assets\img\nordbo-logo.webp">
+        <div class="login-input">
+         <h3>Username   <input class="input is-rounded" type="email" placeholder="Write your E-mail" v-model="email"></h3>
+            <br>
+         <h3>password<input class="input is-rounded" type="password" placeholder="Write your password" v-model="password"> </h3>
+         <button @click="register">login</button>    
+        </div>
     </div>
-
     
 </template>
 
 <style scoped>
 
-    login-input {
+    .login-box {
+        background-color: pink;
+        position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+    }
+    .login-input {
         margin: 0 auto;
     }
 
-    input {
+    .input {
         width: 20vw;
     }
 

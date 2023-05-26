@@ -70,7 +70,11 @@
 </template>
 
 <style>
+<<<<<<< Updated upstream
 /*@import "node_modules\bulma\css\bulma.min.css"; */
+=======
+@import "..\..\node_modules\bulma\css\bulma.min.css";
+>>>>>>> Stashed changes
 
 .navbar-start {
   justify-items: center;

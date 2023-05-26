@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+
 import App from './App.vue'
 import router from './router'
 
@@ -22,6 +23,7 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 import './assets/main.scss'
+import './assets/scss/typography.scss'
 
 const app = createApp(App)
 

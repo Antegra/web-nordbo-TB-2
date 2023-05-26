@@ -1,8 +1,67 @@
 <script setup>
-
+defineProps(['productName'])
 </script>
 
 <template>
+<<<<<<< Updated upstream
+    <div class="section-title">
+        <h3>Which processes do you want to automate?</h3>
+    </div>
+
+
+    <div class="card-grid">
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Sanding.png">
+            <div class="text-box">
+                <h3 class="card-title">Sanding</h3>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Grinding.png">
+            <div class="text-box">
+                <h3 class="card-title">Grinding</h3>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Finishing.png">
+            <div class="text-box">
+                <h3 class="card-title">Finishing</h3>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Deburring.png">
+            <div class="text-box">
+                <h3 class="card-title">Deburring</h3>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Painting.png">
+            <div class="text-box">
+                <h3 class="card-title">Painting/dipensing</h3>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <img class="card-img" src="../assets/img/Quality.png">
+            <div class="text-box">
+                <h3 class="card-title">Quality Control</h3>
+            </div>
+        </div>
+=======
+    
+    <div class="p-card">
+        <img class="card-img" src="../assets/img/Sanding.png">
+        <h3 class="card-title">{{ productName }}</h3>
+>>>>>>> Stashed changes
+    </div>
+
+
+
+
     <div class="section-title">
         <h3>Which processes do you want to automate?</h3>
     </div>
@@ -51,6 +110,9 @@
             </div>
         </div>
     </div>
+
+
+
 </template>
 
 
@@ -59,7 +121,10 @@
 @import "../assets/scss/colors.scss";
 @import "../assets/scss/typography.scss";
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     .card-grid{
         display: flex;
         flex-wrap: wrap;
