@@ -25,7 +25,7 @@ const register = () => {
   
   <h1>Login</h1>
     <div class="login-box">
-        <img style="width:312px; " src="src\assets\img\nordbo-logo.webp">
+        <img style="width:312px; " src="\src\assets\img\nordbo-logo.webp">
         <div class="login-input">
          <h3>Username   <input class="input is-rounded" type="email" placeholder="Write your E-mail" v-model="email"></h3>
             <br>

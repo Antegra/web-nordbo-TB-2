@@ -18,7 +18,7 @@ import Surfaces from '../components/Surfaces.vue';
     <div class="step completed">
       <div class="v-stepper">
         <div class="circle"></div>
-        <div class="line" ><img class="lineImg" src="src\assets\img\stepline.webp"></div>
+        <div class="line" ><img class="lineImg" src="\src\assets\img\stepline.webp"></div>
       </div>
 
       <div class="content">
@@ -29,7 +29,7 @@ import Surfaces from '../components/Surfaces.vue';
   <div class="step active">
     <div class="v-stepper">
       <div class="circle"></div>
-      <div class="line" ><img class="lineImg" src="src\assets\img\stepline2.png"></div>
+      <div class="line" ><img class="lineImg" src="\src\assets\img\stepline2.png"></div>
     </div>
 
     <div class="content">

@@ -4,7 +4,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a style="width:312px; height:128px;" class="navbar-item" href="https://bulma.io">
-      <img style="width:312px; max-height:128rem; height:128px;" src="src\assets\img\nordbo-logo.webp">
+      <img style="width:312px; max-height:128rem; height:128px;" src="\src\assets\img\nordbo-logo.webp">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -34,7 +34,7 @@
         <div class="buttons">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link navbar-item navbar-icon">
-              <img src="src\assets\img\settings.png">
+              <img src="\src\assets\img\settings.webp">
             </a>
 
         <div class="navbar-dropdown">
@@ -60,7 +60,7 @@
       </div>
           
           <RouterLink to="/login"  class="navbar-item navbar-icon">
-            <img src="src\assets\img\logout.png">
+            <img src="\src\assets\img\logout.webp">
           </RouterLink>
         </div>
       </div>
@@ -69,7 +69,7 @@
 </nav>
 </template>
 
-<style>
+<style lang="scss" scoped>
 <<<<<<< Updated upstream
 /*@import "node_modules\bulma\css\bulma.min.css"; */
 =======
