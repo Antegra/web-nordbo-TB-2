@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-import Cards from './Cards.vue';
+import cards from './cards.vue';
 import Input from './Input.vue';
 </script>
 
@@ -10,7 +10,7 @@ import Input from './Input.vue';
 
     <Input></Input>
 
-    <Cards> </Cards>
+    <cards> </cards>
   </div>  
     
 </template>
