@@ -71,7 +71,7 @@
 
 <style lang="scss" scoped>
 
-@import "..\..\node_modules\bulma\css\bulma.min.css";
+@import "../../node_modules/bulma/css/bulma.min.css";
 
 
 .navbar-start {
