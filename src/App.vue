@@ -18,7 +18,7 @@ import Surfaces from './components/Surfaces.vue';
   <RouterView />
 
 <<<<<<< Updated upstream
-  <Information> </Information>
+  <Information />
 =======
 >>>>>>> Stashed changes
 
