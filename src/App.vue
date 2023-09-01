@@ -14,13 +14,9 @@ import Surfaces from './components/Surfaces.vue';
   <RouterView> </RouterView >
 
   
-<Information> </Information>
 
-  <Robots> </Robots>
 
-  <Automation> </Automation>
-
-  <Surfaces> </Surfaces>
+  
     
 </template>
 

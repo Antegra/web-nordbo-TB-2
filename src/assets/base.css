@@ -1,3 +1,12 @@
 .test {
-    background-color: w;
+    background-color: black;
 }
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Roboto"), url("fonts/Ubuntu-Regular.ttf") format("woff2"), url("/fonts/Ubuntu-Regular.ttf") format("woff");
+  }

@@ -16,50 +16,55 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <RouterLink to="/" class="navbar-item">
+      <RouterLink to="/" class="navbar__item">
         Sale
+        
       </RouterLink>
-
-      <RouterLink to="/products" class="navbar-item">
+      <div style="width: 100%; height: 100%; position: relative; transform: rotate(-0deg); transform-origin: 0 0">
+    <div style="width: 7.93px; height: 49.47px; left: 0px; top: -3.26px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; background: #3DBFEA"></div>
+    <div style="width: 12.83px; height: 3.20px; left: 11.15px; top: -0.02px; position: absolute; transform: rotate(-115.63deg); transform-origin: 0 0; background: white"></div>
+    <div style="width: 12.80px; height: 3.20px; left: 18.14px; top: 0px; position: absolute; transform: rotate(-115.63deg); transform-origin: 0 0; background: #FFFEFE"></div>
+</div>
+      <RouterLink to="/products" class="navbar__item">
         Products
       </RouterLink>
-      <RouterLink to="/clients" class="navbar-item">
+      <RouterLink to="/clients" class="navbar__item">
         Clients
       </RouterLink>
       
     </div>
 
     <div class="navbar-end">
-      <div class="navbar-item">
+      <div class="navbar__item">
         <div class="buttons">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link navbar-item navbar-icon">
+          <div class="navbar__item has-dropdown is-hoverable">
+            <a class="navbar-link navbar__item navbar-icon">
               <img src="\src\assets\img\settings.webp">
             </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <a class="navbar__item">
             Settings
           </a>
-          <a class="navbar-item">
+          <a class="navbar__item">
             Increased contrast
           </a>
-          <a class="navbar-item">
+          <a class="navbar__item">
             Color blindness
           </a>
-          <a class="navbar-item">
+          <a class="navbar__item">
             Larger text
           </a>
-          <a class="navbar-item">
+          <a class="navbar__item">
             Dark theme
           </a>
-          <a class="navbar-item">
+          <a class="navbar__item">
             Screen reader
           </a>
         </div>
       </div>
           
-          <RouterLink to="/login"  class="navbar-item navbar-icon">
+          <RouterLink to="/login"  class="navbar__item navbar-icon">
             <img src="\src\assets\img\logout.webp">
           </RouterLink>
         </div>
@@ -94,6 +99,10 @@
 .navbar-icon img {
   width:50px; 
   max-height:50rem;
+}
+
+.navbar__item {
+  font-family: Ubuntu;
 }
 
 </style>
